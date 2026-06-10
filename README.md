@@ -55,6 +55,29 @@ Planned behaviour:
   - List of authentication failures (with timestamp and source)
   - Per‑device warning/error counts
 
+## Quick demo
+
+A small synthetic log is included at [`samples/sample.log`](samples/sample.log) so you can see the analyzer in action without supplying your own data.
+
+Run it with the default flap threshold (3):
+
+```bash
+python src/analyzer.py samples/sample.log
+```
+
+Run it with a stricter threshold (only flag neighbors/interfaces that flap 5+ times):
+
+```bash
+python src/analyzer.py -t 5 samples/sample.log
+```
+
+What to expect in the output:
+
+- **Top OSPF neighbors by flap count** — neighbor `10.0.0.2` flaps repeatedly and is marked `<-- above threshold`, while the quieter `10.0.0.5` (2 changes) is listed but not flagged. At `-t 5` only `10.0.0.2` stays flagged.
+- **Top interfaces by up/down transitions** — `GigabitEthernet0/1` bounces several times and is flagged at the default threshold; raising the threshold to `5` lists it without the flag, showing how the threshold controls what counts as "noisy."
+- **Authentication failures** — the repeated failed logins for user `admin` from source `10.0.0.50` on device `R3` are listed with their timestamps and messages.
+- **Per-device warning/error counts** — only severity 0–4 messages count, so the informational/debug lines (severity 5–7) are ignored, while a few genuine warnings/errors give `R3`, `R1`, and `R2` non-zero counts.
+
 ## Status
 
 This is an in‑progress portfolio project focused on:

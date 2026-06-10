@@ -1,0 +1,34 @@
+Feb 10 09:58:14 R1 %SYS-5-CONFIG_I: Configured from console by admin on vty0
+Feb 10 09:59:02 R1 %OSPF-6-AREACHG: Process 1, area 0 interface GigabitEthernet0/1 state change
+Feb 10 10:00:11 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Feb 10 10:00:48 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+Feb 10 10:02:33 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Feb 10 10:03:07 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+Feb 10 10:04:55 R2 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.5 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Interface down
+Feb 10 10:05:21 R2 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.5 on GigabitEthernet0/2 from LOADING to FULL, Loading Done
+Feb 10 10:06:00 R1 %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.0.0.99 started
+Feb 10 10:07:42 R1 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+Feb 10 10:07:46 R1 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Feb 10 10:09:18 R1 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+Feb 10 10:09:23 R1 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Feb 10 10:10:01 R1 %OSPF-4-ERRRCV: Received invalid packet: mismatched area ID from 10.0.0.7 on GigabitEthernet0/1
+Feb 10 10:11:35 R3 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: admin] [Source: 10.0.0.50] [localport: 22] [Reason: Login Authentication Failed]
+Feb 10 10:11:52 R3 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: admin] [Source: 10.0.0.50] [localport: 22] [Reason: Login Authentication Failed]
+Feb 10 10:12:09 R3 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: admin] [Source: 10.0.0.50] [localport: 22] [Reason: Login Authentication Failed]
+Feb 10 10:12:31 R3 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: admin] [Source: 10.0.0.50] [localport: 22] [Reason: Login Authentication Failed]
+Feb 10 10:13:05 R3 %SEC-6-IPACCESSLOGP: list 101 denied tcp 10.0.0.50(4455) -> 10.0.0.3(22), 1 packet
+Feb 10 10:14:10 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Feb 10 10:14:44 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from LOADING to FULL, Loading Done
+Feb 10 10:15:20 R1 %OSPF-6-DBDESC: Process 1, exchange complete with Nbr 10.0.0.2
+Feb 10 10:16:02 R2 %SYS-6-CLOCKUPDATE: System clock has been updated from NTP
+Feb 10 10:17:48 R1 %SYS-7-DEBUG: ospf packet trace enabled on GigabitEthernet0/1
+Feb 10 10:18:30 R1 %SYS-2-MALLOCFAIL: Memory allocation of 4096 bytes failed from process OSPF Router
+Feb 10 10:19:12 R2 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+Feb 10 10:20:00 R3 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: admin] [Source: 10.0.0.50] [localport: 22] [Reason: Login Authentication Failed]
+Feb 10 10:21:14 R1 %SYS-5-RESTART: System restarted by power-on
+Feb 10 10:22:07 R3 %SYS-6-LOGOUT: User backup logged out on vty1
+Feb 10 10:23:41 R2 %SYS-7-DEBUG: routing table walk complete
+Feb 10 10:24:55 R1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.2 on GigabitEthernet0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+Feb 10 10:25:30 R3 %SYS-6-CONFIG_I: Configured from console by backup on vty1
+this is not a valid syslog line and should be ignored by the parser
+Feb 10 10:26:48 R2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
