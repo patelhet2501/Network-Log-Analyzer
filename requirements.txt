@@ -1,0 +1,4 @@
+# Core runtime (standard library does most of the work)
+# No external packages are strictly required yet.
+
+# rich
